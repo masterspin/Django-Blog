@@ -1,0 +1,25 @@
+{% extends 'courses/base.html' %}
+{% load crispy_forms_tags %}
+{% block content%}
+	<div class="content-section">
+      <div class="media">
+        <div class="media-body">
+          <h3 class="account-heading">{{ user.username }}</h3>
+          <p>Email: <a href="mailto:{{user.email}}" style="color: blue">{{ user.email }}</a></p>
+          <small class="text-muted">This is the contact info shown to others</small>
+          <br>
+          <br>
+        </div>
+      </div>
+      <form method="POST">
+        {% csrf_token%}
+        <fieldset class="form-group">
+          <legend class="border-bottom mb-3">Profile</legend>
+          {{ u_form|crispy }}
+        </fieldset>
+        <div class="form-group">
+          <button class="btn btn-outline-info" type="submit">Update</button>
+        </div>
+      </form>
+    </div>
+{% endblock content %}

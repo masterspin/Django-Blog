@@ -1,0 +1,297 @@
+.welcome{
+  background-image: url(WebsiteWelcome.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%
+}
+
+.main {
+  background: #07889b;
+  color: #000000;
+  margin-top: 5rem;
+}
+
+h2, h5, h6 {
+  color: #9ff2d3;
+}
+h3 {
+  color: #000000;
+}
+
+h4{
+  color: #000000
+}
+
+h1 {
+  color: #fdff00;
+
+}
+
+
+
+ul {
+  margin: 0;
+}
+
+
+.bg-steel {
+  background-color: #e37222;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #6dff56;
+}
+
+.nav-text {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 3px solid #000000;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-family: calibri;
+}
+
+
+.side-section {
+  background: #ffffff;
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-family: calibri;
+  position: absolute;
+  float: top;
+}
+
+#more{
+  display: none;
+}
+
+.read-more{
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.read-more-link, .show-less-link{
+  text-decoration: none;
+  font-weight: bolder;
+  color: green;
+}
+
+button{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: red;
+  font-size: 10px;
+  font-family: calibri;
+  padding: 3px;
+}
+.article-title {
+  color: blue;
+}
+
+a.article-title:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+  font-family: 'Khula', sans-serif;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.other{
+  border-radius: 2px;
+  border: ridge;
+  border-color: blue;
+  background-color: gray;
+  color:white;
+}
+
+.delete{
+  border-radius: 2px;
+  border: ridge;
+  border-color: blue;
+  background-color: red;
+  color:white;
+}
+
+
+.delconfirm{
+  margin-top:3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: calibri;
+  color: #ffffff;
+  background: red;
+  width: 85px;
+  margin-right: 30px:;
+}
+
+
+.cancel{
+  margin-top:3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: calibri;
+  color: #ffffff;
+  background: teal;
+  width: 85px;
+  margin-right: 30px:;
+}
+
+
+.cancel:hover{
+  margin-top:3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: calibri;
+  color: #ffffff;
+  background: green;
+  width: 85px;
+  margin-right: 30px:;
+}
+
+
+
+.btn:hover{
+  color:yellow;
+  background: black;
+}
+
+.update{
+  border-radius: 7px;
+  border: ridge;
+  border-color: teal;
+  margin-top:3px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 17px;
+  font-family: calibri;
+  color: #000000;
+  background: white;
+  width: 70px;
+  margin-right: 30px:;
+}
+
+.image-detail{
+  max-width: 250px;
+  max-height: 175px;
+  height: auto;
+  width: auto;
+}
+
+.image-detail:hover
+  {
+    max-width: 350px;
+    max-height: auto;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+.topcorner{
+    position:absolute;
+    top:18px;
+    right: 0;
+  }
+
+.search{
+  border-style: groove;
+  border-radius: 10px;
+  border-color: lightgreen;
+  margin-top:3px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family: calibri;
+  color: green;
+  background: white;
+  width: 65px;
+  margin-right: 30px:;
+}
+
+
+.search:hover{
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: white;
+  margin-top:3px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family: calibri;
+  color: white;
+  background: green;
+  width: 65px;
+  margin-right: 30px:;
+}
+
+
+.pagebtn{
+  border-color: #ffffff;
+  border: groove;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top:3px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family: calibri;
+  padding: 8px;
+  color: white;
+  background: none;
+  width: 65px;
+  margin-right: 30px:;
+}

@@ -1,0 +1,57 @@
+{% extends 'courses/base.html' %}
+{% block content%}
+{% if post.main_Image or post.sub_Image_1 or post.sub_Image_2 %}
+<aside>
+	<div class="row" style="float:right; margin-left: 5px;">
+	    <div class="col-md-8">
+		  	<div class="side-section">
+		    <h4>Images</h4>
+		      <ul class="list-group">
+		      	{% if post.main_Image %}
+		      	<li class="list-group-item list-group-item-light"><a href="{{ post.main_Image.url }}" target="new">
+		  		<img title="Click To View Image In New Tab" class='image-detail' src="{{ post.main_Image.url }}" />
+		  	</a></li>
+		  		{% endif %} 
+		  		{% if post.sub_Image_1 %}
+		        <li class="list-group-item list-group-item-light"><a href="{{ post.sub_Image_1.url }}" target="new">
+			  	<img title="Click To View Image In New Tab" class='image-detail' src="{{ post.sub_Image_1.url }}" />
+			</a></li>
+				{% endif %}
+				{% if post.sub_Image_2 %}
+		        <li class="list-group-item list-group-item-light"><a href="{{ post.sub_Image_2.url }}" target="new">
+			  	<img title="Click To View Image In New Tab" class='image-detail' src="{{ post.sub_Image_2.url }}" />
+			</a></li>
+				{% endif %}
+		      </ul>
+		  	</div>
+		</div>
+	</div>
+</aside>
+{% endif %}
+<article class="media content-section">
+	<div class="media-body">
+		<div class="article-metadata wide">
+			<a href= "{% url 'user-posts' object.author.username %}" style='color:blue' class="mr-2">{{ object.author }}</a>
+      		<small class="text-muted">{{ object.date_posted | date:"n/j/Y" }}</small>
+      		{% if object.author == user %} &nbsp &nbsp
+      		<a class='other btn-sm mt-1 mb-1' href="{% url 'post-update' object.id %}">Update</a> &nbsp 
+      		<a class='delete btn-sm mt-1 mb-1' href="{% url 'post-delete' object.id %}">Delete</a>
+     		{% endif %}
+   		</div>
+   		<div>
+		    <h1 class="article-title">{{ object.title }}</h1>
+		    <p class="article-content">{{ object.description }}</p>
+		    <br>
+		    <h3>Schedule</h3>
+			<p class="article-content">{{ object.schedule }}</p>
+			<br>
+			<hr>
+			<br>
+		    <p class="article-content">{{ object.price }}</p>
+		    </a>
+		    <br>
+			<p class="article-content"> Contact Info: <a title = 'Click To Email' href = "mailto:{{ post.author.email }}" style=" text-decoration:none;">{{ object.author.email }}</a></p>
+		</div>
+  	</div>
+</article>
+{% endblock content %}
