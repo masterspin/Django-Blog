@@ -21,10 +21,11 @@
 		  </div>
 		</article>
 	{% endfor %}
+  <hr color= "white">
 	{% if is_paginated %}
 
       {% if page_obj.has_previous %}
-        <a class="pagebtn mb-4" href="?page=1">First</a>
+        <a style="text-decoration: none;"class="pagebtn mb-4" href="?page=1">First</a>
         <a class="pagebtn mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
       {% endif %}
 

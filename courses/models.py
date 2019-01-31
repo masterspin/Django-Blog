@@ -14,9 +14,6 @@ def get_image_path(instance, filename):
 class Post(models.Model):
 	title = models.CharField(max_length=150)
 	description = models.TextField()
-	price = models.CharField(default='$20/week',max_length=50)
-	schedule = models.TextField(default='''Monday:	5:30-6:30
-Tuesday:	6:30-7:30''',blank=True)
 	date_posted = models.DateTimeField(default=timezone.now)
 	author = models.ForeignKey(User, on_delete=models.CASCADE)
 	main_Image = models.ImageField(blank=True,null=True)
